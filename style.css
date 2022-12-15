@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap');
+/* font-family: 'Roboto', sans-serif;   font-family: 'Zen Dots', cursive; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(./img/wallpaperflare.com_wallpaper\ \(22\).jpg);
+    background-repeat: no-repeat;
+    background-size: 300% 300%;
+    background:linear-gradient(-45deg, #ee7752, #e73c7e, #e73c7e, #23a6d5, #23d5ab) no-repeat;
+    animation: body 1s ease infinite;
+}
+@keyframes body{
+    0%{
+        background-position: 0 50%;
+
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+
+    background-position: 0 50%;
+    }
+}
+
+.container{
+    width: 800px;
+    height: 500px;
+    background-color: #23adce;
+    animation: container-displacement 2s ease-in-out ;
+    
+}
+
+@keyframes container-displacement{
+
+    0%{
+        transform: translateX(-1401px);
+    }
+
+    100%{
+        transform: translateX( 0);
+    }
+}
+
+
+
+.container:hover{
+    border-radius: 30px;
+    animation-name: border-radius;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    transition-property: border-radius;
+    transition-duration: 1s;
+    
+
+}
+
+
+
+.image{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.house img{
+    transform: translate(-30px,10px);
+
+}
+
+.linkedin{
+    transform: translate( -30px,120px);
+}
+
+img{
+    width: 40px;
+    
+}
+
+@keyframes image{
+
+    from{
+        transform: translate(50%);
+    }
+to{
+
+    transform:  translate(50px);
+}
+
+}
+
+
+
+
+h1{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 50px;
+   
+}
+h2{
+    font-family: 'Unbounded', cursive;
+    color: white;  
+    font-size: 60px;
+    margin-left: 50px;
+}
+p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 50px;
+    
+
+}
+
+button{
+    animation: button 2s ease-in-out alternate infinite;
+    color:dimgray ;
+    background-color: white;
+    width: 20%;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 50px;
+    margin-top: 30px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+
+@keyframes button{
+
+    from{
+        transform: translateX(0px);
+    }
+to{
+
+    transform: translateX(50px);
+}
+
+}
+
+.card{
+    transform: translateY(100px);
+}
+
+
+
